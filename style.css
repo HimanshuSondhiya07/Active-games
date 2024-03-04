@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #91e7da;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #f3fcfa, #91e7da);
+    color: rgba(231,249,247,255);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.profile-menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #6a7d8d;
+}
+
+.profile-menu ul {
+    list-style-type: none;
+    padding: 60px;
+    margin: 0;
+    color: #6a7d8d;
+}
+
+.profile-menu li {
+    padding: 20px;
+    margin-bottom: 5px;
+}
+.stats{
+    font-size: larger;
+    list-style-type: none;
+    padding: 50px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #6a7d8d;
+}
+.stats a:hover {
+    color: #555;
+}
+.stats i{
+    size: 100px;
+}
+.active-games {
+    flex: 3;
+    background-image: linear-gradient(to bottom left,#f3fcfa, #91e7da);
+    padding: 58px;
+    border-radius: 20px;
+    color: #555;
+}
+hr{
+    background-image: linear-gradient(to left,#f3fcfa, #91e7da);
+    width: 35%;
+    height: 12px;
+    border-radius: 10px;
+}
+.active-games h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.game-list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.game-item {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.game-item a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #6a7d8d;
+    font-size: 16px;
+}
+.game-item img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.game-item a:hover {
+    color: #555;
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-image: linear-gradient(to right,#f3fcfa, #91e7da);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar, .active-games {
+        width: 100%;
+    }
+}
